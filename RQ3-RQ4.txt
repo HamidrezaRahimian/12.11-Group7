@@ -1,0 +1,56 @@
+RQ3
+
+ relationship between memory usage and energy consumption in computer programming languages.
+ Two scenarios are considered: 
+-  continuous memory usage and
+- peak memory usage.
+
+
+(((The top five languages requiring the least memory on average are Pascal, Go, C, Fortran, and C++, all compiled languages. The bottom five, with higher memory needs, include JRuby, Dart, Erlang, Lua, and Perl, of which only Erlang is not an interpreted language. Compiled languages generally need less memory than virtual machine or interpreted languages.)))
+
+When examining DRAM energy consumption, the top five languages with the lowest energy consumption are C, Rust, C++, Ada, and Java, with only Java not being compiled. The bottom five, with higher energy consumption, are Lua, JRuby, Python, Perl, and Ruby, all interpreted languages. On average, compiled languages consume less energy than virtual machine or interpreted languages.
+
+Surprisingly, there is little correlation between DRAM energy consumption and peak memory usage. Statistical tests indicate a weak relationship, suggesting that the amount of memory used at a specific point does not strongly influence energy consumption. The text suggests future work to explore the relationship between continuous memory usage over time and energy consumption, considering factors such as garbage collection, cache usage, register location, and data management efficiency in each language.
+
+
++----------------------+------------------+------------------+
+| Language Type        | Average Memory   | Example          |
+|                      | Requirement (Mb) |                  |
++----------------------+------------------+------------------+
+| Compiled             | 125              | C, C++, Rust     |
++----------------------+------------------+------------------+
+| Virtual Machine      | 285              | Java, Kotlin     |
++----------------------+------------------+------------------+
+| Interpreted          | 426              | Python, Ruby     |
++----------------------+------------------+------------------+
+| Imperative           | 116              | C, Fortran       |
++----------------------+------------------+------------------+
+| Object-oriented      | 249              | C++, Java        |
++----------------------+------------------+------------------+
+| Functional           | 251              | Haskell, Scala   |
++----------------------+------------------+------------------+
+| Scripting            | 421              | Python, Perl     |
++----------------------+------------------+------------------+
+
+
+
+
+
+
+
+RQ4
+
+With the fourth research question RQ4, we try to understand if it is possible to automatically decide what is the best programming language when considering energy consumption, execution time, and peak memory usage needed by
+their programs, globally and individually
+
+-energy consumption, 
+-execution time, 
+-and peak memory usage
+
+
+=
+=
+If the developer is only concerned
+with execution time and energy consumption, then yes, it is
+almost always possible to choose the best language. Unfortunately, if memory is also a concern, it is no longer possible
+to automatically decide for a single language
